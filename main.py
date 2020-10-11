@@ -6,6 +6,10 @@ class Main:
         username = input ("Enter username: ")
         password = input (" Enter new password: ")
         c_password = input (" Confirm your password: ")
+        if password  == c_password:
+            print ("passwords match")
+        else:
+            print:("passwords do not match")
 
 
     def navigate (x):
