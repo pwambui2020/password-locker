@@ -1,6 +1,6 @@
 # This is an application 
 
-#  class main:
+class main:
 
 def navigate (x):
     if x=="1":
