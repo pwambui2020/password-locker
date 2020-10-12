@@ -74,6 +74,7 @@ class Main:
             
     def login():
         print("Login to your account")
+        users.append(User("admin","admin"))
         username = input("Enter your username: ")
         password = input("Enter your password: ")
         for x in users:
@@ -90,7 +91,7 @@ class Main:
         if x=="1":
             Main.register()
         elif x=="2":
-            print("Login")
+            Main.login()
         elif x=="3":
             exit()
         else:
