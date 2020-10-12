@@ -68,7 +68,6 @@ class Main:
             user=User(username,password)
             users.append(user)
             Main.login()
-
         else:
             print("passwords do not match")
             Main.register() 
