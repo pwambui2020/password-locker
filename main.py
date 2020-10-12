@@ -64,7 +64,7 @@ class Credentials:
 class Main:
     
     def register():
-        print("Create new account")
+        print("\nCreate new account")
         username=input("Enter username: ")
         password=input("Enter new password: ")
         c_password=input("Confirm your password: ")
@@ -77,7 +77,7 @@ class Main:
             Main.register() 
             
     def login():
-        print("Login to your account")
+        print("\nLogin to your account")
         users.append(User("admin","admin"))
         username = input("Enter your username: ")
         password = input("Enter your password: ")
