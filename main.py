@@ -14,10 +14,11 @@ class Credentials:
         self.username=username
         self.password=password
     def new():
-        print("Select an option to continue")
+        print("\nSelect an option to continue")
         print("1.New credentials\n2.Existing credentials\n3.View credentials\n4.Delete credentials")
         option=input()
         if option=="1":
+            print("\nAdd the new account to the password manager: ")
             site=input("Enter site name: ")
             username=input("Enter username: ")
             print("Do you want the application to generate you a password?\n1.Yes\n2.No")
@@ -33,6 +34,7 @@ class Credentials:
             print("Added successfully")
             Credentials.new()
         elif option=="2":
+            print("\nAdd the existing account to the password manager:")
             site=input("Enter site name: ")
             username=input("Enter username: ")
             password=input("Enter password: ")
@@ -41,13 +43,15 @@ class Credentials:
             print("Added successfully")
             Credentials.new()
         elif option=="3":
+            print("\nView accounts in password manager: ")
             for x in credentials:
                 print("Site name: " + x.site)
                 print("username: " + x.username)
                 print("password: " + x.password)
             Credentials.new()
         elif option=="4":
-            print("Enter the name of the site you want to delete: ")
+            
+            print("\nEnter the name of the site you want to delete: ")
             name=input()            
             for i, o in enumerate(credentials):
                 if o.site== name:
