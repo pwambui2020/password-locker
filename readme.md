@@ -9,7 +9,6 @@ This is an amazing application where a user is able to save, login or delete the
 
 ## Setup/Installation Requirements
 * You clone the repository
-* Install pyperclip `$ python3.6 -m pip install pyperclip`
 * Run the app: open terminal and cd into the project, then run `$ ./main.py`
 
 ## Specifications for the BDD
