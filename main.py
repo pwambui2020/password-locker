@@ -1,5 +1,5 @@
 import random 
-# This is an application
+# 
 users=[] 
 credentials=[]
 
@@ -60,7 +60,6 @@ class Credentials:
         else:
             print("Invalid option")
 
-
 class Main:
     
     def register():
@@ -101,8 +100,8 @@ class Main:
         else:
             print ("invalid password")
     
-print ("Welcome to Password Locker")
-print ("Select an option to continue")
-print ("1.Register\n2.Login\n3.Exit") 
-option=input()
-Main.navigate(option)
+# print ("Welcome to Password Locker")
+# print ("Select an option to continue")
+# print ("1.Register\n2.Login\n3.Exit") 
+# option=input()
+# Main.navigate(option)
