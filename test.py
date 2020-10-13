@@ -1,5 +1,8 @@
 import unittest
 from main import User,Credentials
+users=[]
+credentials=[]
+
 class TestMain(unittest.TestCase):
     def setUp(self):
         self.user=User('Paulyne','2020')
@@ -12,6 +15,11 @@ class TestMain(unittest.TestCase):
         self.assertEqual(self.cred.site,'facebook')
         self.assertEqual(self.cred.username,'Wambui')
         self.assertEqual(self.cred.password,'1989')
+
+    def test_register(self):
+        user=User('Paulyne','2020')
+        users.append(user)
+        self.assertEqual(len(users),1)
        
 
 if __name__=='__main__':
