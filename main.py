@@ -1,14 +1,22 @@
 import random 
-# 
+'''
+users and credentials array are used to store all the user objects and credential respectively
+'''
 users=[] 
 credentials=[]
 
 class User:
+    '''
+    used to create an object containing username and password
+    '''
     def __init__(self, username, password):
         self.username=username
         self.password=password
 
-class Credentials: 
+class Credentials:
+    '''
+    used to store site name,username and password
+    ''' 
     def __init__(self, site ,username, password):
         self.site=site
         self.username=username
@@ -60,7 +68,10 @@ class Credentials:
         else:
             print("Invalid option")
 
-class Main:
+class Main: 
+    '''
+    authenticating user on the app
+    '''
     
     def register():
         print("\nCreate new account")
@@ -74,6 +85,7 @@ class Main:
         else:
             print("passwords do not match")
             Main.register() 
+        
             
     def login():
         print("\nLogin to your account")
@@ -86,10 +98,10 @@ class Main:
             else:
                 print("Invalid login attempt")
                 Main.login()
-
-
+    '''
+    navigate user either to register or login
+    '''
             
-
     def navigate (x):
         if x=="1":
             Main.register()
@@ -105,3 +117,4 @@ print ("Select an option to continue")
 print ("1.Register\n2.Login\n3.Exit") 
 option=input()
 Main.navigate(option)
+  
