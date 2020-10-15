@@ -5,11 +5,10 @@
 ## PAULYNE WAMBUI
 
 ## Description
-This is an amazing application where a user is able to save, login or delete their credentials. In addition the application is able to create for you passwords ans save them too.
+This is an amazing application where a user is able to save, login or delete their credentials. In addition the application is able to create for you passwords and save them too.
 
 ## Setup/Installation Requirements
 * You clone the repository
-* Install pyperclip `$ python3.6 -m pip install pyperclip`
 * Run the app: open terminal and cd into the project, then run `$ ./main.py`
 
 ## Specifications for the BDD

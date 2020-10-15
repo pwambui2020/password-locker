@@ -20,8 +20,12 @@ class TestMain(unittest.TestCase):
         user=User('Paulyne','2020')
         users.append(user)
         self.assertEqual(len(users),1)
-       
 
+    def test_login(self):
+        user=User('Paulyne','2020')
+        self.assertTrue(user.username=='Paulyne')
+        self.assertTrue(user.password=='2020')
+       
 if __name__=='__main__':
     unittest.main()
 
